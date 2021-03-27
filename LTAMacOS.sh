@@ -96,7 +96,7 @@ windowPainting() {
     	set name of result to "Tell us how you're getting on with this computer"
     end tell
 EOF
-
+    #osascript to set background
 }
 
 ############################
@@ -108,6 +108,7 @@ installApp() {
     if [[ "$1" == "dmg" ]]
         then
             curl --progress-bar -L -o "$2.dmg" $4
+            echo "Installing $2"
             yes | hdiutil mount -nobrowse "$2.dmg" -mountpoint "/Volumes/$2" > /dev/null
             cp -R "/Volumes/$2/$3" /Applications
             echo "Successfully installed $2"
@@ -115,6 +116,7 @@ installApp() {
     elif [[ "$1" = "pkg" ]]
         then
             curl --progress-bar -L -o "$2.pkg" $4
+            echo "Installing $2"
             sudo installer -pkg "$2.pkg" -target /
     fi
     osascript << EOF
@@ -153,6 +155,7 @@ installApp "dmg" "Audacity" "Audacity.app" "https://tomcronin.org/Audacity.dmg"
 windowPainting
 
 echo "Everything should now be installed and sorted."
+echo "Please remember to delete this script."
 echo "Have a good day."
 
 cd ~
