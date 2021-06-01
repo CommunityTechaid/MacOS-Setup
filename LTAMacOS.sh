@@ -1,19 +1,33 @@
 #!/bin/zsh
-# This is a script to download .dmgs for the normal LTA suite of programs
-# and then install them on macOS. This is currently only for x86_64 Macs,
-# not the new M1 Silicon / ARM based ones.
-
-# Sanity check for ARM
-# set URLS
-# set list
-# mkdir temp
-# for app in app list
-#     get files
-#     mount files
-#     copy to applications
-#     create shortcut
+## Usage: 
+##      LTAMacOS.sh
+##
+## Options:
+##      None at the moment
+##
+## Description:
+##      This is a script to download .dmgs for the normal LTA suite of programs
+##      and then install them on macOS. 
+##
+## Caveats:
+##      - This is currently only for x86_64 Macs, not the new M1 / ARM based ones.
+##      - Requires internet connection
+##      - Currently assumes fresh install with none of these apps installed
+##
+## Author:
+##      Tom Cronin / tom@tomcronin.org / Contactable in the TechAid Tech WhatsApp group
+##
+##########################################################
 
 clear
+printf "  _                     _          _   _       _______        _              _     _ 
+ | |                   | |        | | | |     |__   __|      | |       /\   (_)   | |
+ | |     __ _ _ __ ___ | |__   ___| |_| |__      | | ___  ___| |__    /  \   _  __| |
+ | |    / _\` | '_ \` _ \| '_ \ / _ \ __| '_ \     | |/ _ \/ __| '_ \  / /\ \ | |/ _\` |
+ | |___| (_| | | | | | | |_) |  __/ |_| | | |    | |  __/ (__| | | |/ ____ \| | (_| |
+ |______\__,_|_| |_| |_|_.__/ \___|\__|_| |_|    |_|\___|\___|_| |_/_/    \_\_|\__,_|
+                                                                                     \n"
+                                                                                     
 echo "###################################################"
 echo "##                                               ##"
 echo "##   This script will attempt to download and    ##"
@@ -25,16 +39,17 @@ echo "##   - Zoom                                      ##"
 echo "##   - LibreOffice                               ##"
 echo "##   - VLC                                       ##"
 echo "##   - GIMP                                      ##"
+echo "##   - Audacity                                  ##"
 echo "##                                               ##"
-echo "##   (Audacity has to be downloaded manually     ##"
-echo "##   at the moment due to their download host)   ##"
+echo "##   (Audacity has to be downloaded from a       ##"
+echo "##   static host as their download hoster only   ##"
+echo "##   provide temporary time bounded links)       ##"
 echo "##                                               ##"
 echo "##   It should be pretty automatic, other than   ##"
-echo "##   potentially requesting a password whilst    ##"
-echo "##   trying to install a .pkg (e.g. Zoom)        ##"
-echo "##                                               ##"
-echo "##   Now with added desktop shortcuts            ##"
-echo "##                                               ##"
+echo "##   requesting a password whilst trying to      ##"
+echo "##   install Zoom at the start, and requesting   ##"
+echo "##   permission to access the Desktop to create  ##"
+echo "##   shortcuts.                                  ##"
 echo "##                                               ##"
 echo "###################################################"
 
@@ -86,7 +101,7 @@ sanityChecks() {
 # Handle static stuff like manuals / backgrounds #
 ##################################################
 
-windowPainting() {
+windowDressing() {
     echo "Going to download the Staying Safe Online PDF to the Desktop"
     curl --progress-bar -L https://tomcronin.org/StayingSafeOnline.pdf > ~/Desktop/Staying\ Safe\ Online.pdf
     echo "Going to create a shortcut to the feedback form on the Desktop"
@@ -96,7 +111,15 @@ windowPainting() {
     	set name of result to "Tell us how you're getting on with this computer"
     end tell
 EOF
-    #osascript to set background
+#     #osascript to set background
+#     curl -s https://tomcronin.org/background.png > ~/Downloads/background.png
+#     osascript << EOF
+#     tell application "System Events"
+#         tell every desktop
+#             set picture to "~/Downloads/background.png"
+#         end tell
+#     end tell
+# EOF
 }
 
 ############################
@@ -146,13 +169,13 @@ installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/
 installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
 
 installApp "dmg" "VLC" "VLC.app" "http://get.videolan.org/vlc/3.0.12/macosx/vlc-3.0.12-intel64.dmg"
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.mirrorservice.org/sites/download.documentfoundation.org/tdf/libreoffice/stable/7.1.1/mac/x86_64/LibreOffice_7.1.1_MacOS_x86-64.dmg"
+installApp "dmg" "LibreOffice" "LibreOffice.app" "https://mirrors.ukfast.co.uk/sites/documentfoundation.org/tdf/libreoffice/stable/7.1.3/mac/x86_64/LibreOffice_7.1.3_MacOS_x86-64.dmg"
 installApp "dmg" "GIMP" "GIMP-2.10.app" "https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.22-x86_64-3.dmg"
 
 # Currently points to a hosted version as Audacity's current hosting provider doesn't provide any static links, all time limited
 installApp "dmg" "Audacity" "Audacity.app" "https://tomcronin.org/Audacity.dmg"
 
-windowPainting
+windowDressing
 
 echo "Everything should now be installed and sorted."
 echo "Please remember to delete this script."
