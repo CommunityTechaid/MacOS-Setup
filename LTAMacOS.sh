@@ -168,8 +168,8 @@ installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=f
 installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
 installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
 
-installApp "dmg" "VLC" "VLC.app" "http://get.videolan.org/vlc/3.0.12/macosx/vlc-3.0.12-intel64.dmg"
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://mirrors.ukfast.co.uk/sites/documentfoundation.org/tdf/libreoffice/stable/7.1.3/mac/x86_64/LibreOffice_7.1.3_MacOS_x86-64.dmg"
+installApp "dmg" "VLC" "VLC.app" "http://get.videolan.org/vlc/3.0.16/macosx/vlc-3.0.16-intel64.dmg"
+installApp "dmg" "LibreOffice" "LibreOffice.app" "https://mirrors.ukfast.co.uk/sites/documentfoundation.org/tdf/libreoffice/stable/7.1.4/mac/x86_64/LibreOffice_7.1.4_MacOS_x86-64.dmg"
 installApp "dmg" "GIMP" "GIMP-2.10.app" "https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.22-x86_64-3.dmg"
 
 # Currently points to a hosted version as Audacity's current hosting provider doesn't provide any static links, all time limited
