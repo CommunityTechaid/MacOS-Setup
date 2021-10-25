@@ -2,6 +2,9 @@
 ## Usage: 
 ##      LTAMacOS.sh
 ##
+## Last updated:
+##      2021/10/25
+##
 ## Options:
 ##      None at the moment
 ##
@@ -172,7 +175,7 @@ installApp "dmg" "VLC" "VLC.app" "http://get.videolan.org/vlc/3.0.16/macosx/vlc-
 installApp "dmg" "LibreOffice" "LibreOffice.app" "https://mirrors.ukfast.co.uk/sites/documentfoundation.org/tdf/libreoffice/stable/7.2.2/mac/x86_64/LibreOffice_7.2.2_MacOS_x86-64.dmg"
 installApp "dmg" "GIMP" "GIMP-2.10.app" "https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.24-x86_64.dmg"
 
-# Currently points to a hosted version as Audacity's current hosting provider doesn't provide any static links, all time limited
+# Currently points to a hosted version (v 3.0.5) as Audacity's current hosting provider doesn't provide any static links, all time limited
 installApp "dmg" "Audacity" "Audacity.app" "https://tomcronin.org/Audacity.dmg"
 
 windowDressing
