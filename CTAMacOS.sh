@@ -1,6 +1,6 @@
 #!/bin/zsh
 ## Usage: 
-##      LTAMacOS.sh
+##      CTAMacOS.sh
 ##
 ## Last updated:
 ##      2021/10/25
@@ -9,7 +9,7 @@
 ##      None at the moment
 ##
 ## Description:
-##      This is a script to download .dmgs for the normal LTA suite of programs
+##      This is a script to download .dmgs for the normal CTA suite of programs
 ##      and then install them on macOS. 
 ##
 ## Caveats:
@@ -23,18 +23,22 @@
 ##########################################################
 
 clear
-printf "  _                     _          _   _       _______        _              _     _ 
- | |                   | |        | | | |     |__   __|      | |       /\   (_)   | |
- | |     __ _ _ __ ___ | |__   ___| |_| |__      | | ___  ___| |__    /  \   _  __| |
- | |    / _\` | '_ \` _ \| '_ \ / _ \ __| '_ \     | |/ _ \/ __| '_ \  / /\ \ | |/ _\` |
- | |___| (_| | | | | | | |_) |  __/ |_| | | |    | |  __/ (__| | | |/ ____ \| | (_| |
- |______\__,_|_| |_| |_|_.__/ \___|\__|_| |_|    |_|\___|\___|_| |_/_/    \_\_|\__,_|
-                                                                                     \n"
+printf "\n   ____                                      _ _         
+  / ___|___  _ __ ___  _ __ ___  _   _ _ __ (_) |_ _   _
+ | |   / _ \| '_ \` _ \| '_ \` _ \| | | | '_ \| | __| | | |
+ | |__| (_) | | | | | | | | | | | |_| | | | | | |_| |_| |
+  \____\___/|_| |_| |_|_| |_| |_|\__,_|_| |_|_|\__|\__, |
+  _____         _        _    _     _              |___/
+ |_   _|__  ___| |__    / \  (_) __| |
+   | |/ _ \/ __| '_ \  / _ \ | |/ _\` |
+   | |  __/ (__| | | |/ ___ \| | (_| |
+   |_|\___|\___|_| |_/_/   \_\_|\__,_|
+   \n\n"
                                                                                      
 echo "###################################################"
 echo "##                                               ##"
 echo "##   This script will attempt to download and    ##"
-echo "##   install the normal suite of LTA apps:       ##"
+echo "##   install the normal suite of CTA apps:       ##"
 echo "##   - Chrome                                    ##"
 echo "##   - Firefox                                   ##"
 echo "##   - Skype                                     ##"
@@ -55,8 +59,9 @@ echo "##   permission to access the Desktop to create  ##"
 echo "##   shortcuts.                                  ##"
 echo "##                                               ##"
 echo "###################################################"
+echo ""
 
-TempFolder="LTA-OSx-Script-$(date +%d-%m-%y)"
+TempFolder="CTA-OSx-Script-$(date +%d-%m-%y)"
 
 #################
 # Sanity checks #
