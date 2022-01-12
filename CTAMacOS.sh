@@ -17,6 +17,12 @@
 ##      - Requires internet connection
 ##      - Currently assumes fresh install with none of these apps installed
 ##
+## TODO:
+##      - Replace all instances relying on tomcronin.org hosting bits
+##      - No clobber
+##      - Dry-run flag
+##      - Generate offline installer flag
+##
 ## Author:
 ##      Tom Cronin / tom@tomcronin.org / Contactable in the TechAid Tech WhatsApp group
 ##
