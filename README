@@ -1,9 +1,12 @@
-This is a script to install the standard suite of Lambeth TechAid programmes on to a Mac.
+This is a script to install the standard suite of Community TechAid programmes on to a Mac.
 
 Core precepts:
 - have no prerequisites other than a machine running macOS
-- install the latest versions
+- install the latest versions of the programmes
 - no / minimal user interaction
 - leave machine as it was
 
 Follow up task would be to create a offline version.
+
+Nice to have: also update macOS to latest version.
+
