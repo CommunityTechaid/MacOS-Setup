@@ -117,7 +117,7 @@ sanityChecks() {
 
 windowDressing() {
     echo "Going to download the Staying Safe Online PDF to the Desktop"
-    curl --progress-bar -L https://5fd7b948-8376-45ee-9740-fcb145158442.usrfiles.com/ugd/5fd7b9_6b09d8c2f611451b864d50a903c0ac4f.pdf > ~/Desktop/Staying\ Safe\ Online.pdf
+    curl --progress-bar -L https://5fd7b948-8376-45ee-9740-fcb145158442.usrfiles.com/ugd/5fd7b9_f8f57e7d7dfe46e5a79620645ec42bd0.pdf > ~/Desktop/Staying\ Safe\ Online.pdf
     echo "Going to download the getting started guide to the Desktop"
     curl --progress-bar -L https://5fd7b948-8376-45ee-9740-fcb145158442.usrfiles.com/ugd/5fd7b9_1b1b265d86b24fbe88161f0648be3e49.pdf > ~/Desktop/Getting\ Started.pdf
     
