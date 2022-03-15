@@ -186,7 +186,8 @@ installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/
 installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
 
 installApp "dmg" "VLC" "VLC.app" "http://get.videolan.org/vlc/3.0.16/macosx/vlc-3.0.16-intel64.dmg"
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.3.0/mac/x86_64/LibreOffice_7.3.0_MacOS_x86-64.dmg"
+installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.3.1/mac/x86_64/LibreOffice_7.3.1_MacOS_x86-64.dmg"
+
 installApp "dmg" "GIMP" "GIMP-2.10.app" "https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.30-x86_64.dmg"
 installApp "dmg" "Audacity" "Audacity.app" "https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-macos-3.1.3-Intel.dmg"
 
