@@ -3,7 +3,7 @@
 ##      CTAMacOS.sh
 ##
 ## Last updated:
-##      2022/05/30
+##      2022/06/08
 ##
 ## Options:
 ##      None at the moment
@@ -185,7 +185,7 @@ installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=f
 installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
 installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
 
-installApp "dmg" "VLC" "VLC.app" "https://get.videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-intel64.dmg"
+installApp "dmg" "VLC" "VLC.app" "https://www.mirrorservice.org/sites/videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-intel64.dmg"
 installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.3.3/mac/x86_64/LibreOffice_7.3.3_MacOS_x86-64.dmg"
 
 installApp "dmg" "GIMP" "GIMP-2.10.app" "https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.30-x86_64.dmg"
