@@ -184,7 +184,7 @@ installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/
 installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
 
 installApp "dmg" "VLC" "VLC.app" "https://www.mirrorservice.org/sites/videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-intel64.dmg"
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.3.5/mac/x86_64/LibreOffice_7.3.5_MacOS_x86-64.dmg"
+installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.4.1/mac/x86_64/LibreOffice_7.4.1_MacOS_x86-64.dmg"
 
 windowDressing
 
