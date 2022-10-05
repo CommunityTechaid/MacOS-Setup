@@ -3,7 +3,7 @@
 ##      CTAMacOS.sh
 ##
 ## Last updated:
-##      2022/06/28
+##      2022/10/05
 ##
 ## Options:
 ##      None at the moment
@@ -51,8 +51,6 @@ echo "##   - Skype                                     ##"
 echo "##   - Zoom                                      ##"
 echo "##   - LibreOffice                               ##"
 echo "##   - VLC                                       ##"
-echo "##   - GIMP                                      ##"
-echo "##   - Audacity                                  ##"
 echo "##                                               ##"
 echo "##   (Audacity has to be downloaded from a       ##"
 echo "##   static host as their download hoster only   ##"
@@ -187,9 +185,6 @@ installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dm
 
 installApp "dmg" "VLC" "VLC.app" "https://www.mirrorservice.org/sites/videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-intel64.dmg"
 installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.3.5/mac/x86_64/LibreOffice_7.3.5_MacOS_x86-64.dmg"
-
-installApp "dmg" "GIMP" "GIMP-2.10.app" "https://download.gimp.org/mirror/pub/gimp/v2.10/osx/gimp-2.10.32-x86_64.dmg"
-installApp "dmg" "Audacity" "Audacity.app" "https://github.com/audacity/audacity/releases/download/Audacity-3.1.3/audacity-macos-3.1.3-Intel.dmg"
 
 windowDressing
 
