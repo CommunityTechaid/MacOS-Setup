@@ -17,7 +17,7 @@ Nice to have: also update macOS to latest version.
 On the Mac that will be recieving the programmes:
 
 ```zsh
-curl https://raw.githubusercontent.com/thewinduppirate/techaid-macOS/main/CTAMacOS.sh > ./CTAMacOS.sh
+curl https://raw.githubusercontent.com/techaid-tech/techaid-macOS/main/CTAMacOS.sh > ./CTAMacOS.sh
 chmod +x ./CTAMacOS.sh
 ./CTAMacOS.sh
 ```
