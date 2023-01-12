@@ -3,7 +3,7 @@
 ##      CTAMacOS.sh
 ##
 ## Last updated:
-##      2022/10/05
+##      2023/01/12
 ##
 ## Options:
 ##      None at the moment
@@ -18,13 +18,13 @@
 ##      - Currently assumes fresh install with none of these apps installed
 ##
 ## TODO:
-##      - Replace all instances relying on tomcronin.org hosting bits
+##      - Pull PDFs from CTA URL pointing at latest
 ##      - No clobber
 ##      - Dry-run flag
 ##      - Generate offline installer flag
 ##
 ## Author:
-##      Tom Cronin / tom@tomcronin.org / Contactable in the TechAid Tech WhatsApp group
+##      Tom Cronin / tom.cronin@communitytechaid.org.uk / Contactable in the TechAid Volunteer WhatsApp group
 ##
 ##########################################################
 
@@ -51,10 +51,6 @@ echo "##   - Skype                                     ##"
 echo "##   - Zoom                                      ##"
 echo "##   - LibreOffice                               ##"
 echo "##   - VLC                                       ##"
-echo "##                                               ##"
-echo "##   (Audacity has to be downloaded from a       ##"
-echo "##   static host as their download hoster only   ##"
-echo "##   provide temporary time bounded links)       ##"
 echo "##                                               ##"
 echo "##   It should be pretty automatic, other than   ##"
 echo "##   requesting a password whilst trying to      ##"
@@ -183,8 +179,8 @@ installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=f
 installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
 installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
 
-installApp "dmg" "VLC" "VLC.app" "https://www.mirrorservice.org/sites/videolan.org/vlc/3.0.17.3/macosx/vlc-3.0.17.3-intel64.dmg"
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.4.1/mac/x86_64/LibreOffice_7.4.1_MacOS_x86-64.dmg"
+installApp "dmg" "VLC" "VLC.app" "https://ftp.heanet.ie/mirrors/videolan/vlc/3.0.18/macosx/vlc-3.0.18-intel64.dmg"
+installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.4.4/mac/x86_64/LibreOffice_7.4.4_MacOS_x86-64.dmg"
 
 windowDressing
 
