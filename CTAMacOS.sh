@@ -177,10 +177,10 @@ installApp "pkg" "Zoom" "zoom.us.app" "https://zoom.us/client/latest/Zoom.pkg"
 
 installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US"
 installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
-installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
+# installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
 
-installApp "dmg" "VLC" "VLC.app" "https://ftp.heanet.ie/mirrors/videolan/vlc/3.0.18/macosx/vlc-3.0.18-intel64.dmg"
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.4.4/mac/x86_64/LibreOffice_7.4.4_MacOS_x86-64.dmg"
+# installApp "dmg" "VLC" "VLC.app" "https://ftp.heanet.ie/mirrors/videolan/vlc/3.0.18/macosx/vlc-3.0.18-intel64.dmg"
+installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.5.1/mac/x86_64/LibreOffice_7.5.1_MacOS_x86-64.dmg"
 
 windowDressing
 
