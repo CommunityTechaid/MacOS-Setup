@@ -47,10 +47,8 @@ echo "##   This script will attempt to download and    ##"
 echo "##   install the normal suite of CTA apps:       ##"
 echo "##   - Chrome                                    ##"
 echo "##   - Firefox                                   ##"
-echo "##   - Skype                                     ##"
 echo "##   - Zoom                                      ##"
 echo "##   - LibreOffice                               ##"
-echo "##   - VLC                                       ##"
 echo "##                                               ##"
 echo "##   It should be pretty automatic, other than   ##"
 echo "##   requesting a password whilst trying to      ##"
@@ -177,10 +175,8 @@ installApp "pkg" "Zoom" "zoom.us.app" "https://zoom.us/client/latest/Zoom.pkg"
 
 installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US"
 installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
-# installApp "dmg" "Skype" "Skype.app" "http://www.skype.com/go/getskype-macosx.dmg"
 
-# installApp "dmg" "VLC" "VLC.app" "https://ftp.heanet.ie/mirrors/videolan/vlc/3.0.18/macosx/vlc-3.0.18-intel64.dmg"
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/7.5.4/mac/x86_64/LibreOffice_7.5.4_MacOS_x86-64.dmg"
+installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-x86_64/24.2.0/en-US/LibreOffice_24.2.0_MacOS_x86-64.dmg"
 
 windowDressing
 
