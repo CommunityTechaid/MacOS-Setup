@@ -3,7 +3,7 @@
 ##      CTAMacOS.sh
 ##
 ## Last updated:
-##      2023/06/08
+##      2025/01/06
 ##
 ## Options:
 ##      None at the moment
@@ -176,7 +176,7 @@ installApp "pkg" "Zoom" "zoom.us.app" "https://zoom.us/client/latest/Zoom.pkg"
 installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US"
 installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
 
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-x86_64/24.2.0/en-US/LibreOffice_24.2.0_MacOS_x86-64.dmg"
+installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-x86_64/24.8.4/en-US/LibreOffice_24.8.4_MacOS_x86-64.dmg"
 
 windowDressing
 
