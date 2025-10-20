@@ -67,10 +67,9 @@ TempFolder="CTA-OSx-Script-$(date +%d-%m-%y)"
 
 sanityChecks() {
     # Check architecture:
-    if [ "$(uname -m)" != 'x86_64' ];
+    if [ "$(uname -m)" != 'x86_64' ] && [ "$(uname -m)" != 'arm64' ];
     then
-        echo "Looks like this machine is not x86_64, so will quit."
-        echo "M1 / ARM support will happen later. It's just too new."
+        echo "Looks like this machine is not a recognised architecture (x86_64 or arm64), so will quit."
         exit
     fi
 
@@ -171,12 +170,18 @@ sanityChecks
 mkdir ~/$TempFolder
 cd ~/$TempFolder
 
-installApp "pkg" "Zoom" "zoom.us.app" "https://zoom.us/client/latest/Zoom.pkg"
+if [ "$(uname -m)" != 'x86_64' ];
+then
+    echo "Install arm64 stuff"
+else
+    echo "Install x86_64 stuff"
+    installApp "pkg" "Zoom" "zoom.us.app" "https://zoom.us/client/latest/Zoom.pkg"
 
-installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US"
-installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
+    installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US"
+    installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
 
-installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-x86_64/25.2.1/en-GB/LibreOffice_25.2.1_MacOS_x86-64.dmg"
+    installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-x86_64/25.2.1/en-GB/LibreOffice_25.2.1_MacOS_x86-64.dmg"
+fi
 
 windowDressing
 
