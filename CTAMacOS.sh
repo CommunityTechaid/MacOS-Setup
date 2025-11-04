@@ -175,14 +175,14 @@ then
 
     installApp "pkg" "Zoom" "https://cdn.zoom.us/prod/6.6.6.67409/arm64/zoomusInstallerFull.pkg"
 
-    installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-aarch64/25.8.2/en-GB/LibreOffice_25.8.2_MacOS_aarch64.dmg"
+    installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/25.8.2/mac/aarch64/LibreOffice_25.8.2_MacOS_aarch64.dmg"
 
 else
     echo "Installing x86_64 stuff"
     
     installApp "pkg" "Zoom" "zoom.us.app" "https://cdn.zoom.us/prod/6.6.6.67409/zoomusInstallerFull.pkg"
 
-    installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-x86_64/25.8.2/en-GB/LibreOffice_25.8.2_MacOS_x86-64.dmg"
+    installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/25.8.2/mac/x86_64/LibreOffice_25.8.2_MacOS_x86-64.dmg"
 fi
 
 echo "Installing universal stuff"
