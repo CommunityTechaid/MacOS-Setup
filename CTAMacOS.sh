@@ -13,7 +13,6 @@
 ##      and then install them on macOS. 
 ##
 ## Caveats:
-##      - This is currently only for x86_64 Macs, not the new M1 / ARM based ones.
 ##      - Requires internet connection
 ##      - Currently assumes fresh install with none of these apps installed
 ##
@@ -172,16 +171,24 @@ cd ~/$TempFolder
 
 if [ "$(uname -m)" != 'x86_64' ];
 then
-    echo "Install arm64 stuff"
+    echo "Installing arm64 / Apple Silicon stuff"
+
+    installApp "pkg" "Zoom" "https://cdn.zoom.us/prod/6.6.6.67409/arm64/zoomusInstallerFull.pkg"
+
+    installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-aarch64/25.8.2/en-GB/LibreOffice_25.8.2_MacOS_aarch64.dmg"
+
 else
-    echo "Install x86_64 stuff"
-    installApp "pkg" "Zoom" "zoom.us.app" "https://zoom.us/client/latest/Zoom.pkg"
+    echo "Installing x86_64 stuff"
+    
+    installApp "pkg" "Zoom" "zoom.us.app" "https://cdn.zoom.us/prod/6.6.6.67409/zoomusInstallerFull.pkg"
 
-    installApp "dmg" "Firefox" "Firefox.app" "http://download.mozilla.org/?product=firefox-latest&os=osx&lang=en-US"
-    installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg"
-
-    installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-x86_64/25.2.1/en-GB/LibreOffice_25.2.1_MacOS_x86-64.dmg"
+    installApp "dmg" "LibreOffice" "LibreOffice.app" "https://www.libreoffice.org/donate/dl/mac-x86_64/25.8.2/en-GB/LibreOffice_25.8.2_MacOS_x86-64.dmg"
 fi
+
+echo "Installing universal stuff"
+
+installApp "dmg" "Chrome" "Google Chrome.app" "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg"
+installApp "dmg" "Firefox" "Firefox.app" "https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-GB"
 
 windowDressing
 
