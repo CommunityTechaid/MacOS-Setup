@@ -173,7 +173,7 @@ if [ "$(uname -m)" != 'x86_64' ];
 then
     echo "Installing arm64 / Apple Silicon stuff"
 
-    installApp "pkg" "Zoom" "https://cdn.zoom.us/prod/6.6.6.67409/arm64/zoomusInstallerFull.pkg"
+    installApp "pkg" "Zoom" "zoom.us.app" "https://cdn.zoom.us/prod/6.6.6.67409/arm64/zoomusInstallerFull.pkg"
 
     installApp "dmg" "LibreOffice" "LibreOffice.app" "https://download.documentfoundation.org/libreoffice/stable/25.8.2/mac/aarch64/LibreOffice_25.8.2_MacOS_aarch64.dmg"
 
